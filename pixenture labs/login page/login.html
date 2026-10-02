@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>signup and login</title>
+    <link rel="stylesheet" type="text/css" href="login.css" />
+    <link rel="icon" type="image/x-icon" href="/assets/logo.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css "
+    />
+    <link rel="stylesheet" href="../icons/css/all.min.css" />
+  </head>
+  <body>
+    <nav>
+        <div class="logo-container"><a href="#">Pixenture labs</a></div>
+        <div class="menu-container">
+          <div class="links closed">
+            <a href="../index.html">home</a>
+            <a href="../about us page/aboutus.html">about us </a>
+            <a href="../service page/services.html">services</a>
+            <a href="../contact page/contact.html">contact us</a>
+          </div>
+          <button class="btn login" >Log In</button>
+  
+          <div class="hamburger-menu">
+            <button id="hamburger-btn " class="btn" onclick="menuopen()">
+              <i class="fa-solid fa-bars hamburger"></i>
+            </button>
+          </div>
+        </div>
+    </nav>
+  
+    <div class="login-page-container">
+      <div class="container" id="container">
+        <div class="form-container sign-up-container">
+          <form action="">
+            <h1 class="login-heading">create account</h1>
+            <div class="media-container">
+              <a href="#" class="social"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#" class="social"><i class="fa-brands fa-square-instagram"></i></a>
+              <a href="#" class="social"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <span class="span"> or use your email for ragistration</span>
+            <input class="input" type="text" name="name" placeholder="name" />
+            <input
+              class="input"
+              type="email"
+              name="email"
+              placeholder="Email"
+            />
+            <input
+              class="input"
+              type="password"
+              name="password"
+              placeholder="paassword"
+            />
+            <!-- <a href="#">forgot your password</a> -->
+            <button class="btnn">sign up</button>
+          </form>
+        </div>
+        <div class="form-container sign-in-container">
+          <form action="#">
+            <h1 class="login-heading">sign in</h1>
+            <div class="media-container">
+              <a href="#" class="social"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="#" class="social"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+              <a href="#" class="social"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+            </div>
+            <span class="span"> or use your account</span>
+            <input
+              class="input"
+              type="email"
+              name="email"
+              placeholder="Email"
+            />
+            <input
+              class="input"
+              type="password"
+              name="password"
+              placeholder="paassword"
+            />
+            <a href="#" class="social">forgot your password</a>
+            <!-- <button class="ghost" id="signup">sign in</button> -->
+
+            <button class="btnn">sign in</button>
+          </form>
+        </div>
+        <div class="overlay-container">
+          <div class="overlay">
+            <div class="overlay-panel overlay-left">
+              <h1 class="login-heading">Welcome back!</h1>
+              <p class="para">
+                to keep connected with us please login with your personal info
+              </p>
+              <button class="btnn ghost" id="signin">sign In</button>
+            </div>
+            <div class="overlay-panel overlay-right">
+              <h1 class="login-heading">Hello, Friend!</h1>
+              <p class="para">enter your details and start journey with us</p>
+              <button class="btnn ghost" id="signup">sign up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+          <div class="ftr-about-container">
+            <h4 class="ftr-welcome">Welcome to ,</h4>
+            <h1 class="ftr-heading-logo">Pixenture Labs</h1>
+            <p class="ftr-website-info">
+              Pixenture lab is one stop solution for all kind of Photography📸 as
+              well as videogrphy🎥. You can recruit Photographers and
+              videographers based on your requirement
+            </p>
+          </div>
+          <div class="service-container">
+            <h3 class="ftr-heading">Services</h3>
+            <a href="../service page/wedding shoots/wedding.html" class="services">Wedding shoots</a>
+            <a href="../service page/fashion shoots/fashion.html" class="services">Fashion shoot</a>
+            <a href="../service page/protrait shoots/protrait.html" class="services">Portrait shoot</a>
+            <a href="../service page/event/event.html" class="services">Events</a>
+            <a href="../service page/model shoots/model.html" class="services">Models Shoots</a>
+            <a href="../service page/shortflims/short.html" class="services">Short Films</a>
+            <a href="../service page/baby shoots/baby.html" class="services">Baby Shoots</a>
+            <a href="../service page/real esatate shoots/real.html" class="services">Real Estate Shoots</a>
+            <a href="../service page/product shoots/product.html" class="services">Product Shoots</a>
+          </div>
+          <div class="links-container">
+            <h3 class="ftr-heading">Quick Links</h3>
+            <a href="../index.html">home</a>
+            <a href="../about us page/aboutus.html">about us </a>
+            <a href="../service page/services.html">services</a>
+            <a href="../contact page/contact.html">contact us</a>
+          </div>
+          <div class="contact-container">
+            <h3 class="ftr-heading">Contact Us</h3>
+            <div class="social-container">
+              <a href="#"><i class="fa-brands fa-square-facebook"></i> /pixenturelabs</a>
+              <a href="#"><i class="fa-brands fa-instagram"> </i>/pixenturelabsofficial</a> 
+              <a href="#"><i class="fa-brands fa-linkedin"></i>/pixenture labs</a>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i>/pixenturelabs</a>
+            </div>
+            <div class="email-input-container">
+              <input type="email" id="contact" placeholder="  enter the email ">
+              <button class="submit"> <i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <script type="text/javascript">
+      
+    </script>
+    <script src="login.js"></script>
+  </body>
+</html>

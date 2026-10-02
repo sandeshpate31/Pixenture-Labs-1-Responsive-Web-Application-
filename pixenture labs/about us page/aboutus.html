@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/dd9af7210e.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="us.css" />
+  <link rel="icon" type="image/x-icon" href="/assets/logo.png">
+  <link rel="stylesheet" href="../icons/css/all.css" />
+  <script src="../script.js"></script>
+</head>
+
+<body>
+  <nav>
+    <div class="logo-container">Pixenture labs</div>
+    <div class="menu-container">
+      <div class="links closed">
+        <a href="../index.html">home</a>
+        <a href="#">about us </a>
+        <a href="../service page/services.html">services</a>
+        <a href="../contact page/contact.html">contact us</a>
+      </div>
+      <button class="btn login" onclick="loginredirect()">Log In</button>
+      <div class="hamburger-menu">
+        <button id="hamburger-btn " class="btn" onclick="menuopen()">
+          <i class="fa-solid fa-bars hamburger"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <div class="empty-div"></div>
+    <!--Slider-->
+    <div id="slider">
+      <div class="slide">
+        <img class="slider-img" src="../assets/out.jpg" height="500px" width="500px" />
+      </div>
+
+      <div class="slide">
+        <img class="slider-img" src="../assets/tusk.jpg" height="500px " width="500px" />
+      </div>
+
+      <div class="slide">
+        <img class="slider-img" src="../assets/standing.jpg" height="500px" width="500px" />
+      </div>
+
+      <div class="slide">
+        <img class="slider-img" src="../assets/land.jpg" height="500px" width="500px" />
+      </div>
+
+      <!--Controlling arrows-->
+      <span class="controls" onclick="prevSlide(-1)" id="left-arrow"><i class="fa fa-arrow-left" aria-hidden="true"></i>
+      </span>
+
+      <span class="controls" id="right-arrow" onclick="nextSlide(1)"><i class="fa fa-arrow-right"
+          aria-hidden="true"></i>
+      </span>
+    </div>
+    <div id="dots-con">
+      <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+    </div>
+
+
+    <div class="container">
+      <div class="photo-container">
+        <div id="slidy-container">
+          <figure id="slidy">
+            <img class="img-call" src="../assets/about1.jpg" alt="eyes">
+            <img class="img-call" src="../assets/about2.jpg" alt="lou">
+            <img class="img-call" src="../assets/about3.jpg" alt="lucie-2">
+            <img class="img-call" src="../assets/about5.jpg" alt="lucie">
+            <img class="img-call" src="../assets/a.jpg" alt="lucie">
+          </figure>
+        </div>
+      </div>
+      <div class="about-us-container">
+        <div class="about-us-head">
+          <h6 class="question">What is Pixenture lab?</h6>
+        </div>
+        <div class="abous-us-info">
+          <div class="para">
+            Pixenture Lab offers a comprehensive online photography and videography solution, boasting a team of
+            passionate, innovative, and experienced professionals. With extensive nationwide travel experience, they
+            specialize in a wide array of projects, including baby shoots, weddings, fashion, fitness, and product
+            photography, among others. Employing artistic techniques to create unique artworks, they deliver numerous
+            high-resolution, natural photos stored on a USB drive. Their professional photographers use a
+            photojournalistic style, capturing emotions seamlessly. Pixenture Lab distinguishes itself by providing
+            high-quality services, utilizing high-end equipment, offering various packages, and delivering additional
+            complimentary products and services. With a team comprising fashion photographers, cinematographers, and
+            professional photographers and videographers, they ensure top-notch projects at a competitive cost due to
+            their online studio setup, eliminating rental expenses associated with offline studios.
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="container">
+      <div class="photo-container">
+        <div id="slidy-container">
+          <figure id="slidy">
+            <img class="img-call" src="../assets/about6.jpg" alt="eyes">
+            <img class="img-call" src="../assets/about7.jpeg" alt="lou">
+            <img class="img-call" src="../assets/about8.jpg" alt="lucie-2">
+            <img class="img-call" src="../assets/aboutus6.jpg" alt="lucie">
+            <img class="img-call" src="../assets/doc.jpg" alt="lucie">
+          </figure>
+        </div>
+      </div>
+      <div class="about-us-container">
+        <div class="about-us-head">
+          <h6 class="question">Why to choose Pixenture Labs?</h6>
+        </div>
+        <div class="abous-us-info">
+          <ul class="para">
+            <li>Pixenture Lab offers homely and cute online photography services for portfolios in
+              modeling, product, fashion, weddings, and more. 🏡📸</li>
+            <li>Specialized photographers and videographers with over 3 years of experience.
+              🎥󰥤</li>
+            <li>Over 200 happy customers. 😁👍</li>
+            <li>Free goodies worth Rs. 1000. 🎁💰</li>
+            <li>Convenient and easy process. 🔄👌</li>
+            <li>Most affordable prices in the market. 💲💼</li>
+            <li>Services include indoor and outdoor portrait and portfolio shoots. 🌟📷</li>
+            <li>Customized packages available. 🎉📦</li>
+            <li>Services also include automobile, event, interior, couple, wedding, fashion, family, and
+              product photography, as well as business professional headshots and Instagram reels.
+              🚗🎉</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <section id="team">
+      <h1 class="heading-co">
+        <section>
+          <div class="teams">
+            <h1 class="toggle">🚀meet our trainers</h1>
+          </div>
+        </section>
+      </h1>
+
+      <div class="container-co">
+        <div class="box">
+          <div class="top-bar"></div>
+          <div class="nav-co">
+            <i class="verify fas fa-check-circle"></i>
+            <input type="checkbox" class="heart-btn" id="heart-btn" />
+            <label class="heart"></label>
+          </div>
+
+          <div class="details">
+            <img src="../assets/look.jpg" alt="" />
+            <strong>Tanmay Raut</strong>
+            <p>photographer ,videographer and protrait photoshoots</p>
+            <p class="mail">tanmay45@gmail.com</p>
+            <a href="#" class="btn">contact us</a>
+          </div>
+
+          <div class="btn-co">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="top-bar"></div>
+          <div class="nav-co">
+            <i class="verify fas fa-check-circle"></i>
+            <input type="checkbox" class="heart-btn" id="heart-btn" />
+            <label class="heart"></label>
+          </div>
+
+          <div class="details">
+            <img src="../assets/musk.jpg" alt="" />
+            <strong>Kedaar Kondre</strong>
+            <p>
+              fashion shoot,model shoots, headshots and fitness photoshoots
+            </p>
+            <p class="mail">Kedaarkondre561@gmail.com</p>
+            <a href="#" class="btn">contact us</a>
+          </div>
+
+          <div class="btn-co">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="top-bar"></div>
+          <div class="nav-co">
+            <i class="verify fas fa-check-circle"></i>
+            <input type="checkbox" class="heart-btn" id="heart-btn" />
+            <label class="heart"></label>
+          </div>
+
+          <div class="details">
+            <img src="../assets/ler.avif" alt="" />
+            <strong>Rohan Jangle</strong>
+            <p>Event photoshoots,wedding shoots,couple photoshoots</p>
+            <p class="mail">Rohanjagle78@gmail.com</p>
+            <a href="#" class="btn">contact us</a>
+          </div>
+
+          <div class="btn-co">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="top-bar"></div>
+          <div class="nav-co">
+            <i class="verify fas fa-check-circle"></i>
+            <input type="checkbox" class="heart-btn" id="heart-btn" />
+            <label class="heart"></label>
+          </div>
+
+          <div class="details">
+            <img src="../assets/kr.avif" alt="" />
+            <strong>Vaibhav Mote</strong>
+            <p>interior shoot,product shoots and portfolio shoot</p>
+            <p class="mail">VaibhavMote96@gmail.com</p>
+            <a href="#" class="btn">contact us</a>
+          </div>
+
+          <div class="btn-co">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="top-bar"></div>
+          <div class="nav-co">
+            <i class="verify fas fa-check-circle"></i>
+            <input type="checkbox" class="heart-btn" id="heart-btn" />
+            <label class="heart"></label>
+          </div>
+
+          <div class="details">
+            <img src="../assets/best.jpg" alt="" />
+            <strong>Satyam Gawali</strong>
+            <p>real estate shoots,babay shoots,product shoots</p>
+            <p class="mail">GawaliSatyam34@gmail.com</p>
+            <a href="#" class="btn">contact us</a>
+          </div>
+
+          <div class="btn-co">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="top-bar"></div>
+          <div class="nav-co">
+            <i class="verify fas fa-check-circle"></i>
+            <input type="checkbox" class="heart-btn" id="heart-btn" />
+            <label class="heart"></label>
+          </div>
+
+          <div class="details">
+            <img src="../assets/girl1.jpg" alt="" />
+            <strong>Kirti Gawant</strong>
+            <p>fashion Designer,makeup artiest,and fashion phtoshoots</p>
+            <p class="mail">Kirtigawant49@gmail.com</p>
+            <a href="#" class="btn">contact us</a>
+          </div>
+
+          <div class="btn-co">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="top-bar"></div>
+          <div class="nav-co">
+            <i class="verify fas fa-check-circle"></i>
+            <input type="checkbox" class="heart-btn" id="heart-btn" />
+            <label class="heart"></label>
+          </div>
+
+          <div class="details">
+            <img src="../assets/girl3.jpg" alt="" />
+            <strong>Prajkta Kambli</strong>
+            <p>Event photoshoots,wedding photoshoots,and model shoots</p>
+            <p class="mail">Prajktakambli67@gmail.com</p>
+            <a href="#" class="btn">contact us</a>
+          </div>
+
+          <div class="btn-co">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="top-bar"></div>
+          <div class="nav-co">
+            <i class="verify fas fa-check-circle"></i>
+            <input type="checkbox" class="heart-btn" id="heart-btn" />
+            <label class="heart"></label>
+          </div>
+
+          <div class="details">
+            <img src="../assets/tuple.webp" alt="" />
+            <strong>Shurti Neve</strong>
+            <p>protrait,fashion, headshot shoots , product</p>
+            <p class="mail">Shurtineve34@gmail.com</p>
+            <a href="#" class="btn">contact us</a>
+          </div>
+
+          <div class="btn-co">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div class="ftr-about-container">
+        <h4 class="ftr-welcome">Welcome to ,</h4>
+        <h1 class="ftr-heading-logo">Pixenture Labs</h1>
+        <p class="ftr-website-info">
+          Pixenture lab is one stop solution for all kind of Photography📸 as
+          well as videogrphy🎥. You can recruit Photographers and
+          videographers based on your requirement
+        </p>
+      </div>
+      <div class="service-container">
+        <h3 class="ftr-heading">Services</h3>
+        <a href="../service page/wedding shoots/wedding.html" class="services">Wedding shoots</a>
+        <a href="../service page/fashion shoots/fashion.html" class="services">Fashion shoot</a>
+        <a href="../service page/protrait shoots/protrait.html" class="services">Portrait shoot</a>
+        <a href="../service page/event/event.html" class="services">Events</a>
+        <a href="../service page/model shoots/model.html" class="services">Models Shoots</a>
+        <a href="../service page/shortflims/short.html" class="services">Short Films</a>        
+        <a href="../service page/baby shoots/baby.html" class="services">Baby Shoots</a>
+        <a href="../service page/real esatate shoots/real.html" class="services">Real Estate Shoots</a>
+        <a href="../service page/product shoots/product.html" class="services">Product Shoots</a>
+      </div>
+      <div class="links-container">
+        <h3 class="ftr-heading">Quick Links</h3>
+        <a href="../index.html">home</a>
+        <a href="#">about us </a>
+        <a href="../service page/services.html" target="_blank">services</a>
+        <a href="../contact page/contact.html">contact us</a>
+      </div>
+      <div class="contact-container">
+        <h3 class="ftr-heading">Contact Us</h3>
+        <div class="social-container">
+          <a href="#"><i class="fa-brands fa-square-facebook"></i> /pixenturelabs</a>
+          <a href="#"><i class="fa-brands fa-instagram"> </i>/pixenturelabsofficial</a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i>/pixenture labs</a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i>/pixenturelabs</a>
+        </div>
+        <div class="email-input-container">
+          <input type="email" id="contact" placeholder="  enter the email " />
+          <button class="submit">
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="us.js"></script>
+
+
+
+
+
+</body>
+
+</html>

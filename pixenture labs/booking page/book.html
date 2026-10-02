@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="/assets/logo.png">
+    <link rel="stylesheet" href="book.css">
+    <link rel="stylesheet" href="../icons/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo-container"><a href="#">Pixenture labs</a></div>
+        <div class="menu-container">
+          <div class="links closed">
+            <a href="../index.html">home</a>
+            <a href="../about us page/aboutus.html">about us </a>
+            <a href="../service page/services.html">services</a>
+            <a href="../contact page/contact.html">contact us</a>
+          </div>
+          <button class="btn login" onclick="loginredirect()" >Log In</button>
+  
+          <div class="hamburger-menu">
+            <button id="hamburger-btn " class="btn" onclick="menuopen()">
+              <i class="fa-solid fa-bars hamburger"></i>
+            </button>
+          </div>
+        </div>
+    </nav>
+    <main>
+        <div class="booking-form-w3layouts">
+            <form class="myform">
+        
+                <h3 class="sub-heading-agileits">Personal Details</h3>
+                <div class="main-flex-w3ls-sectns">
+                    <div class="field-agileinfo-spc form-w3-agile-text">
+                        <input type="text" name="Name" placeholder="Full Name" class="name" required>
+                    </div>
+                </div>
+                <div class="main-flex-w3ls-sectns">
+                    <div class="field-agileinfo-spc form-w3-agile-text">
+                        <input type="tel" name="phone no" placeholder="Phone No : 10 digits only"  pattern="[0-9]{10}" required>
+                    </div>
+                </div>
+                <div class="field-agileinfo-spc form-w3-agile-text">
+                    <input type="email" name="Email" placeholder="Email ID" required="">
+                </div>
+                
+                <div class="field-agileinfo-spc form-w3-agile-text">
+                    <textarea name="customer address" placeholder=" your's address"></textarea>
+                </div>
+        
+                <div class="radio-section">
+                <h2>Gender</h2>
+                    <ul class="radio-buttons-w3-agileits">
+                        <li>
+                            <input type="radio" id="a-option" name="age">
+                            <label for="a-option">male</label>
+                            <div class="check"></div>
+                        </li>
+                        <li>
+                            <input type="radio" id="b-option" name="age">
+                            <label for="b-option">female</label>
+                            <div class="check"></div>
+                        </li>
+                        <li>
+                            <input type="radio" id="c-option" name="age">
+                            <label for="c-option">other</label>
+                            <div class="check">
+                                <div class="inside"></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <h2 class="sub-heading-agileits">Booking Details</h2>
+                <div class="main-flex-w3ls-sectns">
+                    <div class="field-agileinfo-spc form-w3-agile-text">
+                        <select class="form-control">
+                            <option>choose your shoots</option>
+                            <option value="wedding shoots">Wedding Shoots</option>
+                            <option value="Fashion shoots">Fashion Shoots</option>
+                            <option value="Portrait shoots">Portrait Shoots</option>
+                            <option value="Events shoots">Events Shoots</option>
+                            <option value="model shoots">Model Shoots</option>
+                            <option value="Short Films">Short Films</option>
+                            <option value="baby shoots">baby Shoots</option>
+                            <option value="Real Esatate shoots">Real Esatate Shoots</option>                       
+                        </select>
+                    </div>
+                </div>
+                <div class="main-flex-w3ls-sectns">
+                    <div class="field-agileinfo-spc form-w3-agile-text">
+                        <input type="text" name="place" placeholder="Choose Your Shoots address" required="">
+                    </div>
+                    
+                </div>  
+                <div class="main-flex-w3ls-sectns">
+                    
+                    <div class="field-agileinfo-spc form-w3-agile-text1 shiv">
+                        <input id="datepicker" name="Shootsdate" type="date" placeholder="choose your shoots Date" required  class="hasDatepicker" onkeypress="return false;" min="2013-12-25">
+                    </div>
+                    <div class="field-agileinfo-spc form-w3-agile-text2">
+                        <input type="time" id="timepicker" name="ShootsTime"  class="timepicker form-control hasWickedpicker" placeholder="choose your shoots timing" value="">
+                    </div>
+                </div>  
+        
+            
+                
+                <div class="field-agileinfo-spc form-w3-agile-text">
+                    <textarea name="Message" placeholder="Any Message..."></textarea>
+                </div>
+            
+                <div class="clear"></div>
+                <input type="submit" value="Submit" class="submit-form">
+                <input type="reset" value="Clear Form" class="reset">
+                <div class="clear"></div>
+            </form>
+        </div>
+        <div class="popup-container popup-cnt" >
+            <div class="popup">
+                <h2 class="popup-head">Thanks for Booking your slot</h2>
+                <p>Thank you for registration we will scheudule a meeting or call to discuss your detailed need and cost of shoots.</p>
+                <button class="btn popup-btn" >Okay</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+          <div class="ftr-about-container">
+            <h4 class="ftr-welcome">Welcome to ,</h4>
+            <h1 class="ftr-heading-logo">Pixenture Labs</h1>
+            <p class="ftr-website-info">
+              Pixenture lab is one stop solution for all kind of Photography📸 as
+              well as videogrphy🎥. You can recruit Photographers and
+              videographers based on your requirement
+            </p>
+          </div>
+          <div class="service-container">
+            <h3 class="ftr-heading">Services</h3>
+            <a href="../service page/wedding shoots/wedding.html" class="services">Wedding shoots</a>
+            <a href="../service page/fashion shoots/fashion.html" class="services">Fashion shoot</a>
+            <a href="../service page/protrait shoots/protrait.html" class="services">Portrait shoot</a>
+            <a href="../service page/event/event.html" class="services">Events</a>
+            <a href="../service page/model shoots/model.html" class="services">Models Shoots</a>
+            <a href="../service page/shortflims/short.html" class="services">Short Films</a>
+            <a href="../service page/baby shoots/baby.html" class="services">Baby Shoots</a>
+            <a href="../service page/real esatate shoots/real.html" class="services">Real Estate Shoots</a>
+            <a href="../service page/product shoots/product.html" class="services">Product Shoots</a>
+          </div>
+          <div class="links-container">
+            <h3 class="ftr-heading">Quick Links</h3>
+            <a href="../../index.html">home</a>
+            <a href="../../about us page/aboutus.html">about us </a>
+            <a href="../../service page/services.html">services</a>
+            <a href="../../contact page/contact.html">contact us</a>
+          </div>
+          <div class="contact-container">
+            <h3 class="ftr-heading">Contact Us</h3>
+            <div class="social-container">
+              <a href="#"><i class="fa-brands fa-square-facebook"></i> /pixenturelabs</a>
+              <a href="#"><i class="fa-brands fa-instagram"> </i>/pixenturelabsofficial</a> 
+              <a href="#"><i class="fa-brands fa-linkedin"></i>/pixenture labs</a>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i>/pixenturelabs</a>
+            </div>
+            <div class="email-input-container">
+              <input type="email" id="contact" placeholder="  enter the email ">
+              <button class="submit"> <i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+          </div>
+        </div>
+      </footer>
+<script src="book.js"></script>
+</body>
+</html>
